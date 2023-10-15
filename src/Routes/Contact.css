@@ -1,0 +1,135 @@
+
+.form{
+    width:600px;
+    height:440px;
+    background:#000;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:20px;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative}
+.contact-header
+{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:White;
+    border-bottom:3px solid #ff5858;
+    font-size: 1.5rem;
+}
+
+input{
+    width:150%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+textarea{
+    width:150%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;transition:all .3s;
+    border-bottom:2px solid #bebed2;
+    
+}
+textarea:focus{
+    border-bottom:2px solid #78788c;
+    color:white;  
+
+}
+.p{
+    margin-top: 28px;
+   
+}
+input:focus{
+    border-bottom:2px solid #78788c;
+    color:white;
+    
+}
+.p:before{
+    content:attr(type);
+    display:block;
+    font-size:1.2rem;
+    font-weight: 600;
+    color:white;
+    text-align: left;
+}
+.button_contact{
+    width:80px;
+    padding: 12px 18px;
+    margin:10px auto 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #ff5858;
+    background:#ff5858;
+    cursor:pointer;
+    transition:all .3s;
+    color:white;
+    border-radius: 3px;
+}
+.button_contact:hover{
+    background:#78788c;
+    color:#fff;
+    border:2px solid #78788c;
+}
+.container-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+  }
+  .content-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+  .avatar {
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    border: 3px white solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px #ff5858;
+    transform: translatey(0px);
+    animation: float 4s ease-in-out infinite;
+  }
+  .avatar img {
+    width: 100%;
+    height: auto;
+  }
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px #ff5858;
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 8px 15px 0px #ff5858;
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px #ff5858;
+      transform: translatey(0px);
+    }
+  }
+
+@media screen and(max-width:600px){
+  .container-box{
+    margin-left: 40px;
+  }
+}
+

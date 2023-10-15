@@ -1,0 +1,61 @@
+h1{
+    color:#fff;
+}
+.card__contact{
+    background-color: #ff5858;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 110px;
+    margin-top: 20px;
+
+}
+.card__contact:hover{
+    background-color: #333;
+    border: 1px solid white;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.left p{
+    font-size: 1.2rem;
+    text-align: center;
+    width: 300px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.right{
+    margin-top: 40px;
+}
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+.right img{
+    border: 1px solid #333;
+}
+.img-top{
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    padding-top: 20%;
+    z-index: 6;
+}
+.img-bottom{
+    grid-column: 6 / -1;
+    grid-row: 1;
+    z-index: 5;
+}

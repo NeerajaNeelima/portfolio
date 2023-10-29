@@ -90,3 +90,16 @@ a{
         
     }
 }
+@media screen and (max-width : 480px){
+    .Hamburger{
+        margin-right: 10%;
+    }
+    .header{
+        min-width:fit-content;
+        
+    }
+    .header-bg{
+        min-width: fit-content;
+        
+    }
+}

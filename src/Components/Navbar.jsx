@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <div className={color ? "header header-bg" : "header"}>
         <Link  to="/">
-                <h1 style={{color:"#ff5858"}}>Portfolio</h1>
+                <h1  style={{color:"#ff5858"}}>Portfolio</h1>
         </Link>
         <ul className={state ? "nav-menu active" : "nav-menu"}>
             <li>

@@ -59,3 +59,27 @@ h1{
     grid-row: 1;
     z-index: 5;
 }
+@media screen and (max-width : 480px){
+    .img-container{
+       
+        grid-template-columns: repeat(10, 1fr);
+        
+    }
+    
+    .img-top{
+        
+        grid-column: 3 / span 24;
+        margin-top: 30%;
+    }
+    .img-bottom{
+        width: 100px;
+        grid-column: 1 / span 5; 
+        
+    }
+    .img-top img{
+        width: 300px;
+    }
+    .img-bottom img{
+        width: 250px;
+    }
+}

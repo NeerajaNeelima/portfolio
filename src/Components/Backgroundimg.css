@@ -122,3 +122,31 @@
         margin-left: 0;
     }
 }
+@media screen and (max-width : 480px){
+    .Background .content{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 20%;
+        left: 50%;
+        text-align: center;
+        color:white;
+    }
+    .Background .content h1{
+        font-size: 1rem;
+        position:relative;
+    }
+    .Background .content p{
+        font-size: 0.8rem;
+    }
+    .profile img{
+       display: none;
+    }
+    .btn{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .btn-light{
+        font-size: 10px;
+        padding: 5px;
+    }
+}

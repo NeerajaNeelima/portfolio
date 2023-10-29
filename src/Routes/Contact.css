@@ -133,3 +133,11 @@ input:focus{
   }
 }
 
+@media screen and (max-width : 480px){
+  input,textarea{
+    width:100%;
+  }
+  .container-box{
+    margin-left: 20px;
+  }
+}

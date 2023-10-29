@@ -7,7 +7,10 @@ import { useState } from 'react';
 const Navbar = () => {
     const [state,clickState]=useState(false);
     const handleClick = () => clickState(!state)
-
+    const closeMenu = () => {
+        clickState(false);
+      };
+    
     const[color,setColor] =useState(false);
     const changeColor = () =>{
         if(window.scrollY >= 100)
@@ -28,16 +31,16 @@ const Navbar = () => {
         </Link>
         <ul className={state ? "nav-menu active" : "nav-menu"}>
             <li>
-                <Link  to="/">Home</Link>
+                <Link  to="/" onClick={closeMenu}>Home</Link>
             </li>
             <li>
-                <Link  to="/project">Projects</Link>
+                <Link  to="/project" onClick={closeMenu}>Projects</Link>
             </li>
             <li>
-                <Link  to="/about">About</Link>
+                <Link  to="/about" onClick={closeMenu}>About</Link>
             </li>
             <li>
-                <Link  to="/contact">Contact</Link>
+                <Link  to="/contact" onClick={closeMenu}>Contact</Link>
             </li>
            
         </ul>
